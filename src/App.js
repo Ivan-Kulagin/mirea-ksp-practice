@@ -1,8 +1,7 @@
-import {BrowserRouter} from 'react-router-dom';
 import React from "react";
+import {BrowserRouter} from 'react-router-dom';
 import Routes from "./routes/Routes"
 import Header from "./components/Header"
-import Dialogs from "./components/Dialogs"
 
 function App() {
     return (
@@ -10,10 +9,8 @@ function App() {
             <BrowserRouter>
                 <Header />
                 <Routes />
-                <Dialogs />
             </BrowserRouter>
         </div>
-
     );
 }
 

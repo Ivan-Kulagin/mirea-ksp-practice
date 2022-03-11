@@ -7,13 +7,14 @@ const Header = () => {
             style={{
                 borderBottom: "solid 1px",
                 paddingBottom: "1rem",
+                marginBlockEnd: "10px"
             }}
         >
         <h1>Menu</h1>
         <Link to="/quote1">Quote 1</Link> | {" "}
         <Link to="/quote2">Quote 2</Link> | {" "}
-        <Link to='/temperature'>Temperature</Link>
-
+        <Link to="/temperature">Temperature</Link> | {" "}
+        <Link to="/dialogs">Dialogs</Link>
     </nav>
 }
 

@@ -1,10 +1,25 @@
 import DialogItem from "../DialogItem";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import {blueGrey} from '@mui/material/colors';
+
+import * as React from "react";
 
 const Dialogs = (props) => {
-    return (<div>
-        <DialogItem name={"Lumine"} id={1} />
-        <DialogItem name={"Ivan"} id={2} />
-    </div>)
+    return (
+        <Box
+            sx={{ width: '100%', maxWidth: '600px', bgcolor: blueGrey.A700, color: blueGrey[50] }}
+        >
+            <nav aria-label="main mailbox folders">
+                <List>
+                    <DialogItem name={"Vanya"} id={1}/>
+                    <DialogItem name={"Max"} id={2}/>
+                    <DialogItem name={"Borya"} id={3}/>
+                </List>
+            </nav>
+        </Box>
+    )
 };
+
 
 export default Dialogs;
