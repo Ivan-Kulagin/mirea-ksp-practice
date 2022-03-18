@@ -5,7 +5,7 @@ import ListItemText from "@mui/material/ListItemText";
 import * as React from "react";
 
 const DialogItem = (props) => {
-    let path = "/dialogs/" + props.id;
+    let path = `/dialogs/${props.id}/${props.message}`;
 
     return <ListItem disablePadding button component={Link} to={path}>
         <ListItemButton>

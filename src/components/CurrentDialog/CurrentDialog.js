@@ -4,7 +4,7 @@ import {Card} from "@mui/material";
 import {blueGrey} from "@mui/material/colors";
 import Box from "@mui/material/Box";
 
-export default function CurrentDialog(props) {
+export default function CurrentDialog() {
     let params = useParams();
     return (
         <Card sx={{
@@ -19,6 +19,7 @@ export default function CurrentDialog(props) {
         }}>
             <Box sx={{paddingTop: '20px'}}>
                 Your dialog with USER-<Box component="span" sx={{color: 'black'}}>{params.id}</Box>
+                <Box>Message: '{params.message}'</Box>
             </Box>
         </Card>
     );

@@ -11,7 +11,7 @@ const AppRoutes = () => (
         <Route path="quote2" element={<Quote page_number={2} quote={'Another quote'} author={'Kulagin'} />} />
         <Route path="temperature" element={<Temperature temperature={-2} />} />
         <Route path="dialogs" element={<Dialogs />} />
-        <Route path="dialogs/:id" element={<DialogsPage />} />
+        <Route path="dialogs/:id/:message" element={<DialogsPage />} />
     </Routes>
 );
 
